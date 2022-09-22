@@ -3,89 +3,70 @@
     padding: 0;
     text-decoration: none;
     font-family: 'Arvo', serif;
+    box-sizing: border-box;
+    transition: .2s linear;
 }
-.bg-img{
-    background-image: url(Trippy-little-Black-gradients-Seamless-Pattern.jpg);
-     height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background: linear-gradient(rbga(1,1,1,1),#0000,url(pexels-pixabay-268415.jpg));
-    /* font-family:'Playfair Display', serif; */
-    
-}
-.logo{
-    width:120px;
-    position: absolute;
-    top:5%;
-    left: 10%;
-    cursor: pointer;
-}
-header{
-    padding-bottom:1rem 5%;
+/* HEADER */
+.header{
+    background-color: black;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed; 
+    align-items:center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
-    line-height: 130px;
-    background-image: url(Trippy-little-Black-gradients-Seamless-Pattern.jpg);
-
 }
-.title{
-    text-align: center;
+.header .logo img{
+    height: 5rem;
+}
+.header .navbar a{
+    margin: 0;
+    font-size: 1.5rem;
     color: whitesmoke;
-    padding-top:200px;
+    padding:1rem;
 }
-.title h1{
-    font-size: 130px;
-    font-family: 'Arvo', serif;
+.header .navbar a:hover{
+    color: grey;
+    border-bottom:0.1rem solid grey;
+    padding-bottom: 0.5rem;
 }
-.title p{
-    margin-top: 10px;
-    font-size: 20px;
-    font-style: italic;
-    font-family: 'Arvo', serif;
-}
-header .navbar a{
-    margin: 0 1rem;
-    font-size: 20px;
-    color: whitesmoke;
-}
-header .navbar a:hover{
-    color:  bisque;
-    /* border-bottom: .1rem solid burlywood;
-    padding-bottom: .5rem; */
-}
-header .icons{
+.header .icons {
     color: whitesmoke;
     cursor: pointer;
-    font-size: 30px;
-    /* margin-left: 2rem;  */
-    margin-right: 100px;
-    position: absolute; 
-    right: 0;
+    font-size: 2rem;
+    margin-left: 2rem;
 }
-.fas.fa-bars{
-    padding-right: 20px;
-}
-.fa-regular.fa-moon{
-    padding-right: 20px;
-}
-.fa-solid.fa-arrows-rotatep{
-    padding-right: 20px;
+.header .icons div:hover{
+    color: grey;
 }
 #menu-btn{
     display: none;
 }
-hr {
-    border: dotted #EAF6F6 6px;
-    border-bottom: none;
-    width: 4%;
+/* HOME */
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:url(Trippy-little-Black-gradients-Seamless-Pattern.jpg) no-repeat;
+    background-size:cover;
+    background-position: center;
 }
-/* 2nd part */
+.home .content{
+    color:whitesmoke;
+   text-align: center;
+}
+.home .content h1{
+    font-size: 6rem;
+}
+.home .content p{
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+/* MAP */
 .map{
     padding:100px;
     display: flex;
@@ -93,10 +74,10 @@ hr {
     justify-content: center;
     background-color: whitesmoke;
     height: 100vh;
+    text-align: center;
 }
-.content h1{
-    color: black;
-    font-size: 50px;
+.map .cont h1{
+    font-size: 3rem;
 }
 .box{
     background-color:white;
@@ -166,61 +147,117 @@ hr {
    padding:10px;
    left:150px;
  }
-/* 2nd part end */
-/* Media query */
-
-/* Desktop */
-
-@media only screen and (max-width:900px){
-    .title h1{
-        font-size: 110px;
+/* media queries */
+@media only screen and (max-width:800px){
+    .header{
+        padding: 1.5rem 2rem;
+    } 
+    .header .navbar{
+        position: absolute;
+        top:100%;
+        right:-100%;
+        background: whitesmoke;
+        height: 100vh;
     }
-}
-@media only screen and (max-width:720px){
-    .title h1{
-        font-size: 80px;
+    .header .navbar.active{
+        right:0%;
+        /* background: whitesmoke; */
     }
-    header{
-        padding: 5%;
-    }
-    .logo{
-        padding-top: 50px;
-        height: 65px;
-        width: 65px;
-    }
-    header .icons{
-        padding-top: 50px;
+    .header .navbar a{
+        display: block;
+        color: black;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
     }
     #menu-btn{
         display: inline-block;
     }
-    header .navbar{
-        position: absolute;
-        top: 100%;
-        right:-100%;
-        background: whitesmoke;
-        width: 100%;
-        height: calc(100vh);
-    }
-    .header .navbar.active{
-        right:0;
-    }
-    header .navbar a{
-        color: black;
-        display: block;
-        margin: 1.5rem;
-        padding: .5rem;
+    .map .cont h1{
         font-size: 2rem;
     }
+    .box{
+        background-color:white;
+        width:550px;
+        height:350px;
+        border:5px solid black;
+        margin:30px auto;
+        position:relative;
+     }
+     .FIRST{
+        position:absolute;
+        top:140px;
+        left:30px;
+        height:85px;
+      }
+      .APJ{
+        position:absolute;
+        top:65px;
+        left:193px;
+        height:50px;
+        width:195px;
+      }
+      .ATAL{
+        position:absolute;
+        bottom:80px;
+        right:0px;
+      }
+      .ADMIN{
+         position:absolute;
+         top:30px;
+         left:100px;
+         height:100px;
+         width:93px;
+      }
+      .CIVIL{
+        position:absolute;
+        top:230px;
+        left:70px;
+        height: 60px;
+        width:125px;
+      }
+      .OTHER{
+         position:absolute;
+         top:40px;
+         right:110px;
+         height:90px;
+         width:93px;
+      }
+      .CANTEEN{
+        position:absolute;
+        bottom:0px;
+        width:88px;
+        padding: 10px;
+        right:300px;
+      }
+      .STUD{
+        position:absolute;
+        bottom:0px;
+        right:100px;
+      }
+      .BELL{
+        position:absolute;
+        top:170px;
+        padding:10px;
+        left:150px;
+      }
     
 }
-
-@media only screen and (max-width:500px){
-    .title h1{
-        font-size: 60px;
+@media   only screen and  (max-width:700px){
+    .home .content h1{
+        font-size:4rem;
     }
-    header{
-        padding: 5%;
+    .home .content p{
+        font-size: 1.5rem;
+        padding: .5rem;
     }
 }
-
+@media only screen and (max-width:500px){
+    .home .content h1{
+        font-size:3rem;
+    }
+    .home .content p{
+        font-size: 1rem;
+        padding: .5rem;
+    }
+}
