@@ -60,9 +60,6 @@
     background-size:cover;
     background-position: center;
 }
-.home .active{
-  background: url(starnetblog_subtile_gray_pattern3.jpg);
-}
 .home .content{
     color:whitesmoke;
    text-align: center;
