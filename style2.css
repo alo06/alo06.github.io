@@ -13,7 +13,6 @@
     align-items:center;
     justify-content: space-between;
     padding: 1.5rem 7%;
-    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -24,9 +23,7 @@
     height: 5rem;
 }
 .header .navbar a{
-    margin: 0;
     font-size: 1.5rem;
-    width: 100%;
     color: whitesmoke;
     padding:1rem;
 }
@@ -47,6 +44,12 @@
 #menu-btn{
     display: none;
 }
+.dark-mode{
+  filter: invert(1);
+}
+.invert{
+  filter: invert(1) hue-rotate(180deg);
+}
 /* HOME */
 .home{
     height: 100vh;
@@ -54,13 +57,16 @@
     align-items: center;
     justify-content: center;
     background:url(Trippy-little-Black-gradients-Seamless-Pattern.jpg) no-repeat;
-    width: 100%;
     background-size:cover;
     background-position: center;
+}
+.home .active{
+  background: url(starnetblog_subtile_gray_pattern3.jpg);
 }
 .home .content{
     color:whitesmoke;
    text-align: center;
+   width: 100%;
 }
 .home .content h1{
     font-size: 6rem;
@@ -76,7 +82,7 @@
     align-items: center;
     justify-content: center;
     background-color: whitesmoke;
-    height: 100vh;
+    height: 100%;
     text-align: center;
 }
 .map .cont h1{
@@ -150,6 +156,72 @@
    padding:10px;
    left:150px;
  }
+ /* SEARCH */
+.search{
+  background-color: black;
+  padding: 100px;
+  text-align: center;
+}
+.search h1{
+  font-size: 3rem;
+  color: whitesmoke;
+}
+.search p{
+  font-size: 1.5rem;
+  padding: 40px;
+  margin: 20px;
+  color: whitesmoke;
+}
+.bar{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  max-width:700px;
+  background: rgba(165, 165, 165, 0.836);
+  border-radius: 20px;
+  height: 50px;
+  padding: 20px;
+  margin: 50px;
+}
+.se{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bar input{
+  background: transparent;
+  width:100%;
+  border: none;
+  outline: none;
+  padding:20px;
+}
+::placeholder{
+  color: whitesmoke;
+  font-size: 1rem;
+}
+.se button{
+  width: 30px;
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+/* FOOTER */
+/* ADMIN */
+.depts{
+  background-color: whitesmoke;
+  padding: 50px;
+}
+.depts h1{
+  font-size: 3rem;
+}
+.depts ul,li{
+  padding: 20px;
+}
 /* media queries */
 @media only screen and (max-width:800px){
     .header{
@@ -181,7 +253,7 @@
     }
     .box{
         background-color:white;
-        width:550px;
+        width:500px;
         height:350px;
         border:5px solid black;
         margin:30px auto;
@@ -222,7 +294,7 @@
       .OTHER{
          position:absolute;
          top:40px;
-         right:110px;
+         right:19px;
          height:90px;
          width:93px;
       }
