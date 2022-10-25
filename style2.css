@@ -158,6 +158,11 @@
   background-color: black;
   padding: 100px;
   text-align: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .search h1{
   font-size: 3rem;
@@ -208,6 +213,51 @@
   cursor: pointer;
 }
 /* FOOTER */
+footer{
+  width: 100%;
+  background: linear-gradient(to right,#0c0c0c,#202020);
+  color: whitesmoke;
+  padding: 30px;
+  line-height: 30px;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-right: 0px;
+}
+.col{
+  flex-basis: 25%;
+  padding: 10px;
+}
+footer img{
+  height: 5rem;
+  margin-bottom: 10px;
+}
+.col h2{
+  width: fit-content;
+  margin-bottom: 20px;
+}
+.col ul{
+  list-style: none;
+}
+.col ul li{
+  padding-left: 0px;
+  color: whitesmoke;
+}
+.col #email{
+  margin-top: 35px;
+}
+.col iframe{
+  width: 340px;
+  height: 400px;
+  margin:0px;
+  border-radius: 5%;
+}
+#copyright{
+  text-align: center;
+}
 /* ADMIN */
 .depts{
   background-color: whitesmoke;
@@ -313,6 +363,9 @@
         padding:10px;
         left:150px;
       }
+      footer .col{
+        flex-basis: 100%;
+      }
     
 }
 @media   only screen and  (max-width:700px){
@@ -324,7 +377,7 @@
         padding: .5rem;
     }
 }
-@media only screen and (max-width:500px){
+@media only screen and (max-width:550px){
     .home .content h1{
         font-size:3rem;
     }
@@ -332,4 +385,66 @@
         font-size: 1rem;
         padding: .5rem;
     }
+    .box{
+      width: 400px;
+    }
+    .FIRST{
+        position:absolute;
+        top:140px;
+        left:30px;
+        height:85px;
+      }
+      .APJ{
+        position:absolute;
+        top:65px;
+        left:123px;
+        height:50px;
+        width:195px;
+      }
+      .ATAL{
+        position:absolute;
+        bottom:80px;
+        right:0px;
+      }
+      .ADMIN{
+         position:absolute;
+         top:30px;
+         left:30px;
+         height:100px;
+         width:93px;
+      }
+      .CIVIL{
+        position:absolute;
+        top:230px;
+        left:70px;
+        height: 60px;
+        width:125px;
+      }
+      .OTHER{
+         position:absolute;
+         top:40px;
+         right:19px;
+         height:90px;
+         width:93px;
+      }
+      .CANTEEN{
+        position:absolute;
+        bottom:0px;
+        width:88px;
+        padding: 10px;
+        left: 123px;
+      }
+      .STUD{
+        position:absolute;
+        bottom:0px;
+        right:50px;
+        width: 100px;
+        height: 70px;
+      }
+      .BELL{
+        position:absolute;
+        top:170px;
+        padding:10px;
+        left:150px;
+      }
 }
