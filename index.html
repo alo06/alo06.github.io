@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="style2.css">
+    <title>MAP</title>
+    <link rel="stylesheet" href="style3.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 </head>
 <body>
-    <!-- NAVBAR -->
+    <!-- header -->
     <header class="header">
         <a href="#se" class="logo">
             <img src="logo-removebg-preview3.png" alt="">
         </a>
         <nav class="navbar">
-            <a href="test2.html">Home</a>
+            <a href="#home">Home</a>
+            <a href="about.html">About</a>
             <a href="https://nmamit.nitte.edu.in/">College</a>
             <a href="#feedback">Feedback</a>
         </nav>
@@ -27,49 +29,45 @@
             <div class="fas fa-bars" id="menu-btn"></div>
         </div>
     </header>
-    <!-- ABOUT -->
-    <div class="about inverted"> 
+    <!-- home -->
+    <div class="home" id="home">
         <div class="content">
-            <h1>About This Project</h1>
-            <div class="row">
-                <div class="cola">
-                    <p>Our project aims at simplifying the motion inside the campus for the freshers, the visitors and also the current students.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio quo, quod ipsum suscipit repudiandae rep</p>
-                    <p>This project was done using HTML,CSS,JAVASCRIPT at the front end and </p>
-                </div>
-                <div class="cola inverted">
-                     <a href="test2.html"><img src="img1.JPG" alt=""></a>
-                </div>
-            </div>
+            <h1>FIND MY</h1>
+            <h1>CLASS</h1>
+            <p>Find the required class within no time...</p>
+            <p>Press the magnifying glass for direct search</p>
         </div>
     </div>
-    <!-- ABOUT US -->
-    <section class="abou">
-        <div class="content">
-            <h1>About Us</h1>
-            <div class="row">
-                <div class="cola ic">
-                    <img src="im.png" alt="" class="inverted">
-                    <h3>Jeevottam Bhat</h3>
-                    <p>Lorem ipsum dolor sit amet</p>
-                    <a href=""><i class="fa-brands fa-github fa-2xl icon"></i></a>
-                    <a href=""> <i class="fa-brands fa-linkedin fa-2xl icon"></i></a>
-                    <a href=""><i class="fa-brands fa-twitter fa-2xl  icon"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram fa-2xl  icon"></i></a>
-                </div>    
-                <div class="cola ic">
-                    <img src="im.png" alt="" class="inverted">
-                    <h3>Chinthan</h3>
-                    <p>Lorem ipsum dolor sit amet</p>
-                    <a href=""><i class="fa-brands fa-github fa-2xl icon"></i></a>
-                    <a href=""> <i class="fa-brands fa-linkedin fa-2xl icon"></i></a>
-                    <a href=""><i class="fa-brands fa-twitter fa-2xl  icon"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram fa-2xl  icon"></i></a>
-                </div>    
-            </div>  
-        </div>   
+    <!-- MAP -->
+    <section class="map inverted">
+        <div class="cont">
+            <h1>Here is the college map</h1>
+            <div class="box">
+                <button class="FIRST">FIRST</button>
+                <button class="APJ" >APJ</button>
+                <button class="ATAL">ATAL</button>
+                <a href="admin.html"><button class="ADMIN">ADMIN</button></a>
+                <button class="CIVIL">CIVIL</button>
+                <button class="OTHER">OTHER</button>
+                <button class="CANTEEN">CANTEEN</button>
+                <button class="STUD">STUD-COP</button>
+                <button class="BELL">BELL</button>
+            </div>
+        </div>
     </section>
-    <script src="index.js"></script>
+    <!--SEARCH-->
+    <section class="search" id="se">
+    <div class="con">
+        <h1>Want To Find Your Class?</h1>
+        <p>Use the bottom search bar to search you class!</p>
+        <div class="se" >
+            <form action="" method="" class="bar">
+                <input type="text" placeholder="Search" name="search">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass fa-2xl" style="color:whitesmoke"></i></button>
+             </form>
+         </div>
+    </div>
+    </section>
     <!-- FOOTER -->
     <footer>
         <div class="row">
@@ -101,5 +99,6 @@
         </div>
             <h5 id="copyright">Copyright</h5>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
