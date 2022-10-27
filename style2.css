@@ -50,6 +50,7 @@
 .invert{
   filter: invert(1) hue-rotate(180deg);
 }
+/* HEADER */
 /* HOME */
 .home{
     height: 100vh;
@@ -72,6 +73,7 @@
     font-size: 1.5rem;
     padding: 1rem;
 }
+/* HOME */
 /* MAP */
 .map{
     padding:100px 100px;
@@ -153,6 +155,7 @@
    padding:10px;
    left:150px;
  }
+ /* MAP */
  /* SEARCH */
 .search{
   background-color: black;
@@ -212,6 +215,7 @@
   justify-content: center;
   cursor: pointer;
 }
+/* SEARCH */
 /* FOOTER */
 footer{
   width: 100%;
@@ -258,6 +262,7 @@ footer img{
 #copyright{
   text-align: center;
 }
+/* FOOTER */
 /* ADMIN */
 .depts{
   background-color: whitesmoke;
@@ -269,7 +274,86 @@ footer img{
 .depts ul,li{
   padding: 20px;
 }
+/* ADMIN */
+/* ABOUT */
+.about{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+.about .content{
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+}
+.about h1{
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.about p{
+  margin: 20px;
+  font-size:1.3rem;
+}
+
+.cola{
+  flex-basis: 50%;
+}
+.content img{
+  width: 600px;
+}
+.abou{
+  background-color: #0c0c0c;
+  height: 100vh;
+  text-align: center;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.abou .content{
+ text-align: center;
+ width: 100%;
+}
+.abou h1{
+  font-size:3rem;
+  margin-bottom: 20px;
+}
+.abou h3{
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.abou img{
+  height: 100px;
+  width: auto;
+  margin:10px;
+}
+.abou .icon{
+  width: 100%;
+  padding: 30px;
+  color: whitesmoke;
+}
+.ic{
+  background: rgba(233, 232, 232, 0.1);
+    backdrop-filter:blur(10px);
+    color: white;
+    border-radius: 50px;
+   box-shadow:0px 0px 16px 0px rgba(0,0,0,0.5);
+    text-align:center;
+}
+/* ABOUT */
 /* media queries */
+@media only screen and (max-width:1300px){
+  .about .cola{
+    flex-basis: 100%;
+  }
+}
+@media only screen and (max-width:1500px){
+  footer .col{
+    flex-basis: 50%;
+  }
+}
 @media only screen and (max-width:800px){
     .header{
         padding: 1.5rem 2rem;
@@ -366,7 +450,33 @@ footer img{
       footer .col{
         flex-basis: 100%;
       }
-    
+      .cola{
+        flex-basis: 100%;
+      }
+      .abou img{
+        height: 50px;
+      }
+      .abou .icon{
+        padding: 20px;
+      }
+      .abou h3{
+        font-size: 1.5rem;
+      }
+      .abou p{
+        font-size: 1rem;
+      }
+      .abou h1{
+        margin-top: 20px;
+      }
+      .about h1{
+        font-size: 2rem;
+      }
+      .about p{
+        font-size: 1rem;
+      }
+      .about img{
+        width: 500px;
+      }
 }
 @media only screen and (max-width:834px){
   .search h1{
@@ -478,5 +588,8 @@ footer img{
       }
       .bar{
         max-width: 300px;
+      }
+      .about img{
+        width: 300px;
       }
 }
