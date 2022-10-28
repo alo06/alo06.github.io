@@ -109,7 +109,8 @@
    top:90px;
    left:220px;
    height:80px;
-   width:250px;
+   width:200px;
+   text-align: center;
  }
  .ATAL{
    position:absolute;
@@ -558,7 +559,7 @@ footer img{
       padding: .5rem;
   }
     .box{
-      width: 400px;
+      width: 370px;
     }
     .FIRST{
         position:absolute;
@@ -571,7 +572,7 @@ footer img{
         top:65px;
         left:123px;
         height:50px;
-        width:195px;
+        width:144px;
       }
       .ATAL{
         position:absolute;
@@ -595,7 +596,7 @@ footer img{
       .OTHER{
          position:absolute;
          top:40px;
-         right:19px;
+         right:10px;
          height:90px;
          width:93px;
       }
@@ -609,7 +610,7 @@ footer img{
       .STUD{
         position:absolute;
         bottom:0px;
-        right:50px;
+        right:30px;
         width: 100px;
         height: 70px;
       }
@@ -625,10 +626,14 @@ footer img{
         margin:0px;
         border-radius: 5%;
       }
+
       .bar{
         max-width: 300px;
       }
       .about img{
         width: 300px;
+      }
+      .bar{
+        width: 200px;
       }
 }
