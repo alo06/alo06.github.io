@@ -48,7 +48,7 @@
   filter: invert(1);
 }
 .invert{
-  filter: invert(1) hue-rotate(180deg);
+  filter: invert(1);
 }
 /* HEADER */
 /* HOME */
