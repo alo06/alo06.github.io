@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Arvo', serif;
+}
+.bg-img{
+    background-image: url(Trippy-little-Black-gradients-Seamless-Pattern.jpg);
+     height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(rbga(1,1,1,1),#0000,url(pexels-pixabay-268415.jpg));
+    /* font-family:'Playfair Display', serif; */
+    
+}
+.logo{
+    width:120px;
+    position: absolute;
+    top:5%;
+    left: 10%;
+    cursor: pointer;
+}
+header{
+    padding-bottom:1rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    line-height: 130px;
+    background-image: url(Trippy-little-Black-gradients-Seamless-Pattern.jpg);
+
+}
+.title{
+    text-align: center;
+    color: whitesmoke;
+    padding-top:200px;
+}
+.title h1{
+    font-size: 130px;
+    font-family: 'Arvo', serif;
+}
+.title p{
+    margin-top: 10px;
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Arvo', serif;
+}
+header .navbar a{
+    margin: 0 1rem;
+    font-size: 20px;
+    color: whitesmoke;
+}
+header .navbar a:hover{
+    color:  bisque;
+    /* border-bottom: .1rem solid burlywood;
+    padding-bottom: .5rem; */
+}
+header .icons{
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 30px;
+    /* margin-left: 2rem;  */
+    margin-right: 100px;
+    position: absolute; 
+    right: 0;
+}
+.fas.fa-bars{
+    padding-right: 20px;
+}
+.fa-regular.fa-moon{
+    padding-right: 20px;
+}
+.fa-solid.fa-arrows-rotatep{
+    padding-right: 20px;
+}
+#menu-btn{
+    display: none;
+}
+hr {
+    border: dotted #EAF6F6 6px;
+    border-bottom: none;
+    width: 4%;
+}
+/* 2nd part */
+.map{
+    padding:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    height: 100vh;
+}
+.content h1{
+    color: black;
+    font-size: 50px;
+}
+.box{
+    background-color:white;
+    width:650px;
+    height:450px;
+    border:5px solid black;
+    margin:30px auto;
+    position:relative;
+ }
+ button{
+   padding: 30px;
+ }
+ .FIRST{
+   position:absolute;
+   top:180px;
+   left:30px;
+   height:100px;
+ }
+ .APJ{
+   position:absolute;
+   top:90px;
+   left:220px;
+   height:80px;
+   width:250px;
+ }
+ .ATAL{
+   position:absolute;
+   bottom:80px;
+   right:0px;
+   
+ }
+ .ADMIN{
+    position:absolute;
+    top:30px;
+    left:100px;
+    height:140px;
+    width:120px;
+ }
+ .CIVIL{
+   position:absolute;
+   top:300px;
+   left:70px;
+   width:160px;
+ }
+ .OTHER{
+    position:absolute;
+    top:50px;
+    right:110px;
+    height:120px;
+    width:120px;
+ }
+ .CANTEEN{
+   position:absolute;
+   bottom:0px;
+   width:100px;
+   padding: 10px;
+   right:300px;
+ }
+ .STUD{
+   position:absolute;
+   bottom:0px;
+   right:100px;
+ }
+ .BELL{
+   position:absolute;
+   top:200px;
+   padding:10px;
+   left:150px;
+ }
+/* 2nd part end */
+/* Media query */
+
+/* Desktop */
+
+@media only screen and (max-width:900px){
+    .title h1{
+        font-size: 110px;
+    }
+}
+@media only screen and (max-width:720px){
+    .title h1{
+        font-size: 80px;
+    }
+    header{
+        padding: 5%;
+    }
+    .logo{
+        padding-top: 50px;
+        height: 65px;
+        width: 65px;
+    }
+    header .icons{
+        padding-top: 50px;
+    }
+    #menu-btn{
+        display: inline-block;
+    }
+    .header .navbar.active{
+        right:0%;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        right:-100%;
+        background: whitesmoke;
+        width: 100%;
+        height: calc(100vh);
+    }
+    .header .navbar.active{
+        right:0%;
+    }
+    header .navbar a{
+        color: black;
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+        font-size: 2rem;
+    }
+    
+}
+
+@media only screen and (max-width:500px){
+    .title h1{
+        font-size: 60px;
+    }
+    header{
+        padding: 5%;
+    }
+}

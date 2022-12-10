@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(Trippy-little-Black-gradients-Seamless-Pattern.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(rbga(1,1,1,1),#0000,url(pexels-pixabay-268415.jpg));
+    font-family:'Playfair Display', serif;;
+    
+}
+.logo{
+    width:120px;
+    position: absolute;
+    top:5%;
+    left: 10%;
+    cursor: pointer;
+}
+.navbar{
+    padding-bottom: 2%;
+}
+.title{
+    text-align: center;
+    color: whitesmoke;
+    padding-top:200px;
+}
+.title h1{
+    font-size: 130px;
+    font-family: 'Arvo', serif;
+}
+.title p{
+    margin-top: 10px;
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Arvo', serif;
+}
+/* Media query */
+
+/* Desktop */
+
+@media only screen and (max-width:900px){
+    .title h1{
+        font-size: 110px;
+    }
+}
+@media only screen and (max-width:700px){
+    .title h1{
+        font-size: 80px;
+    }
+    .navbar{
+        padding: 5%;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .title h1{
+        font-size: 60px;
+    }
+    .navbar{
+        padding: 5%;
+    }
+}
+
